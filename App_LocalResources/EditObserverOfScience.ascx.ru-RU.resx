@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="lblStatus.Text" xml:space="preserve">
+    <value>Статус разработки</value>
+  </data>
+	<data name="lblContent.Help" xml:space="preserve">
+    <value>Введите содержимое</value>
+  </data>
+	<data name="lblTitle.Text" xml:space="preserve">
+    <value>Название разработки</value>
+  </data>
+	<data name="lblTitle.Help" xml:space="preserve">
+    <value>Укажите название разработки</value>
+  </data>
+	<data name="valContent.ErrorMessage" xml:space="preserve">
+    <value>&lt;br&gt;Содержимое обязательно!</value>
+  </data>
+	<data name="ControlTitle_edit.Text" xml:space="preserve">
+    <value>Редактировать карточку разработки</value>
+  </data>
+	<data name="lblYearOfCreation.Text" xml:space="preserve">
+		<value>Год разработки</value>
+	</data>
+	<data name="lblDescription.Text" xml:space="preserve">
+		<value>Описание разработки</value>
+	</data>
+	<data name="lblInventionEssence.Text" xml:space="preserve">
+		<value>Суть разработки</value>
+	</data>
+	<data name="lblAdvantages.Text" xml:space="preserve">
+		<value>Ключевые преимущества</value>
+	</data>
+</root>

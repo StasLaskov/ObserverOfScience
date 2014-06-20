@@ -1,0 +1,55 @@
+-- NOTE: To manually execute this script you must 
+-- replace {databaseOwner} and {objectQualifier} with real values. 
+-- Defaults is "dbo." for database owner and "" for object qualifier 
+
+-- Create tables
+
+IF NOT EXISTS (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}ObserverOfScience_ObserverOfSciences]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+	BEGIN
+		CREATE TABLE {databaseOwner}[{objectQualifier}ObserverOfScience_ObserverOfSciences]
+		(
+			[ObserverOfScienceID] int NOT NULL IDENTITY(1, 1),
+			[ModuleID] int NOT NULL,
+			[Content] nvarchar(max) NOT NULL,
+			[CreatedByUser] int NOT NULL,
+			[CreatedOnDate] datetime NOT NULL
+		)
+
+		ALTER TABLE {databaseOwner}[{objectQualifier}ObserverOfScience_ObserverOfSciences] 
+			ADD CONSTRAINT [PK_{objectQualifier}ObserverOfScience_ObserverOfSciences] PRIMARY KEY CLUSTERED  ([ObserverOfScienceID])
+			
+		CREATE NONCLUSTERED INDEX [IX_{objectQualifier}ObserverOfScience_ObserverOfSciences_ModuleID] 
+			ON {databaseOwner}[{objectQualifier}ObserverOfScience_ObserverOfSciences] ([ModuleID])
+
+		ALTER TABLE {databaseOwner}[{objectQualifier}ObserverOfScience_ObserverOfSciences] WITH NOCHECK 
+			ADD CONSTRAINT [FK_{objectQualifier}ObserverOfScience_ObserverOfSciences_{objectQualifier}Modules] FOREIGN KEY ([ModuleID]) REFERENCES {databaseOwner}[{objectQualifier}Modules] ([ModuleID]) ON DELETE CASCADE NOT FOR REPLICATION
+			
+		ALTER TABLE {databaseOwner}[{objectQualifier}ObserverOfScience_ObserverOfSciences] 
+			ADD CONSTRAINT [DF_{objectQualifier}ObserverOfScience_ObserverOfSciences_CreatedOnDate] DEFAULT (getdate()) FOR [CreatedOnDate]
+	END
+GO
+
+-- Drop existing stored procedures
+
+---- Just example:
+-- IF EXISTS (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}ObserverOfScience_GetObserverOfSciences]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+--	DROP PROCEDURE {databaseOwner}{objectQualifier}ObserverOfScience_GetObserverOfSciences
+-- GO
+
+-- Create stored procedures
+
+---- Just example:
+-- CREATE PROCEDURE {databaseOwner}{objectQualifier}ObserverOfScience_GetObserverOfSciences
+--	@ModuleId int
+-- AS 
+-- SELECT [ObserverOfScienceID]
+--	[ModuleID],
+--	[Content],
+--	[CreatedByUser],
+--	[CreatedOnDate],
+--	'CreatedByUserName' = {objectQualifier}Users.FirstName + ' ' + {objectQualifier}Users.LastName
+-- FROM {objectQualifier}ObserverOfScience_ObserverOfSciences
+-- INNER JOIN {objectQualifier}Users on {objectQualifier}ObserverOfScience_ObserverOfSciences.CreatedByUser = {objectQualifier}Users.UserId
+-- WHERE [ModuleID] = @ModuleId
+-- GO
+

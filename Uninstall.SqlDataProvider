@@ -1,0 +1,25 @@
+-- NOTE: To manually execute this script you must 
+-- replace {databaseOwner} and {objectQualifier} with real values. 
+-- Defaults is "dbo." for database owner and "" for object qualifier 
+
+-- Drop tables
+
+ALTER TABLE {databaseOwner}[{objectQualifier}ObserverOfScience_ObserverOfSciences] 
+	DROP CONSTRAINT [FK_{objectQualifier}ObserverOfScience_ObserverOfSciences_{objectQualifier}Modules]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}ObserverOfScience_ObserverOfSciences] 
+	DROP CONSTRAINT [PK_{objectQualifier}ObserverOfScience_ObserverOfSciences]
+GO
+
+DROP INDEX {databaseOwner}[{objectQualifier}ObserverOfScience_ObserverOfSciences].[IX_{objectQualifier}ObserverOfScience_ObserverOfSciences_ModuleID]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}ObserverOfScience_ObserverOfSciences]
+GO
+
+-- Drop stored procedures
+
+-- DROP PROCEDURE {databaseOwner}[{objectQualifier}ObserverOfScience_GetObserverOfSciences]
+-- GO
+

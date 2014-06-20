@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="lblStatus.Text" xml:space="preserve">
+    <value>Status invention</value>
+  </data>
+	<data name="lblContent.Help" xml:space="preserve">
+    <value>Enter the Content</value>
+  </data>
+	<data name="lblTitle.Text" xml:space="preserve">
+    <value>Title invention</value>
+  </data>
+	<data name="lblTitle.Help" xml:space="preserve">
+    <value>Name invention</value>
+  </data>
+	<data name="valContent.ErrorMessage" xml:space="preserve">
+    <value>&lt;br&gt;Content is required</value>
+  </data>
+	<data name="ControlTitle_edit.Text" xml:space="preserve">
+    <value>Edit card invention</value>
+  </data>
+	<data name="lblYearOfCreation.Text" xml:space="preserve">
+		<value>YearOf Creation invention</value>
+	</data>
+</root>

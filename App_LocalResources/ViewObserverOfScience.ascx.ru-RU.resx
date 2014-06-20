@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="AddContent.Action" xml:space="preserve">
+    <value>Добавить содержимое</value>
+  </data>
+	<data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;P&gt; Модуль Adam&lt;/P&gt;</value>
+  </data>
+	<data name="DefaultContent.Text" xml:space="preserve">
+    <value>Что-то вместо содержимого</value>
+  </data>
+	<data name="lblStatus.Format" xml:space="preserve">
+    <value>Статус разработки: {0}</value>
+  </data>
+	<data name="lblScientists.Format" xml:space="preserve">
+	<value>Разработчики:{0}</value>
+  </data>
+	  <data name="lblDetailScientist.Format">
+    <value>&lt;b&gt;Разработчики:&lt;/b&gt;&lt;i&gt;{0}&lt;/i&gt; 
+</value>
+  </data>
+  <data name="lblDetailStatus.Format">
+    <value>&lt;b&gt;Статус разработки:&lt;/b&gt; &lt;i&gt;{0}&lt;/i&gt;
+</value>
+  </data>
+  </data>
+</root>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB46B7D4-05BD-4BEF-BD0A-8468E03D60A6}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ObserverOfScience</RootNamespace>
+    <AssemblyName>ObserverOfScience</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AspNet>
+      <AspNet DisableCodeBehindGeneration="True" />
+    </AspNet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="DotNetNuke">
+      <HintPath>..\..\bin\DotNetNuke.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Web">
+      <HintPath>..\..\bin\DotNetNuke.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="module.css" />
+    <Content Include="ViewObserverOfScience.ascx" />
+    <Content Include="SettingsObserverOfScience.ascx" />
+    <Content Include="EditObserverOfScience.ascx" />
+    <Content Include="ViewDetailScience.ascx" />
+    <Content Include="SettingsDetailScience.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="01.00.00.SqlDataProvider" />
+    <None Include="Uninstall.SqlDataProvider" />
+    <None Include="App_LocalResources\ViewObserverOfScience.ascx.resx" />
+    <None Include="App_LocalResources\ViewObserverOfScience.ascx.ru-RU.resx" />
+    <None Include="App_LocalResources\EditObserverOfScience.ascx.resx" />
+    <None Include="App_LocalResources\EditObserverOfScience.ascx.ru-RU.resx" />
+    <None Include="App_LocalResources\SettingsObserverOfScience.ascx.resx" />
+    <None Include="App_LocalResources\SettingsObserverOfScience.ascx.ru-RU.resx" />
+    <None Include="ObserverOfScience.dnn" />
+    <None Include="doc\install.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="lib\ObserverOfScienceSettings.cs" />
+    <Compile Include="lib\AssemblyInfo.cs" />
+    <Compile Include="components\ObserverOfScienceSettings.cs" />
+    <Compile Include="ViewObserverOfScience.ascx.cs">
+      <DependentUpon>ViewObserverOfScience.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewObserverOfScience.ascx.designer.cs">
+      <DependentUpon>ViewObserverOfScience.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsObserverOfScience.ascx.cs">
+      <DependentUpon>SettingsObserverOfScience.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsObserverOfScience.ascx.designer.cs">
+      <DependentUpon>SettingsObserverOfScience.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EditObserverOfScience.ascx.cs">
+      <DependentUpon>EditObserverOfScience.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="components\InventionInfo.cs" />
+    <Compile Include="components\InventionResourceInfo.cs" />
+    <Compile Include="components\InvTermsInfo.cs" />
+    <Compile Include="components\ScientistInfo.cs" />
+    <Compile Include="ViewDetailScience.ascx.cs">
+      <DependentUpon>ViewDetailScience.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDetailScience.ascx.designer.cs">
+      <DependentUpon>ViewDetailScience.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsDetailScience.ascx.designer.cs">
+      <DependentUpon>SettingsDetailScience.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsDetailScience.ascx.cs">
+      <DependentUpon>SettingsDetailScience.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="components\DetailScienceSettings.cs" />
+    <Compile Include="EditObserverOfScience.ascx.control.cs">
+      <DependentUpon>EditObserverOfScience.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="components\IntroductionInfo.cs" />
+    <Compile Include="components\PatentInfo.cs" />
+    <Compile Include="components\ObserverOfScienceController.cs" />
+    <Compile Include="components\ObserverOfScienceInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="True" VerifyCodeBehindEvents="True">
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

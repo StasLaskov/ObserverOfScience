@@ -1,0 +1,62 @@
+/* Place module CSS here */
+
+.ObserverOfScience_ContentList 
+{ 
+	width:100%;
+}
+			
+.ObserverOfScience_ContentListItem { text-align: left ; }
+.InventionName{}
+.InventionStatus{}
+.InventionEssence{}
+
+.DetailInvention,
+.DetailInvention td 
+
+{
+
+	  /*border:1px solid #000;
+	    border-collapse:collapse;*/
+
+      }
+   .DetailName,
+   .DetailName h1
+ {
+        margin:0;
+        font-size:15px;
+      }
+   .HyperName,
+   .HyperName h1
+ {
+       font-size:14px;
+      }
+
+
+   .Hrlist,
+   .Hrlist hr
+ {
+       border 2px solid #000;
+       margin:5px 0 5px 0;
+      }
+
+
+   .Invention,
+   .Invention p
+ {
+      text-indent:25px;
+      margin-bottom: 0px;
+      }
+   .ImgInvention
+ {
+      display:inline;
+      margin-top:77px;
+      width:90px;
+      height:90px;
+      }
+   .OneInvention
+{
+width:89%;
+display:inline;
+float:left;
+margin-right:10px;
+}

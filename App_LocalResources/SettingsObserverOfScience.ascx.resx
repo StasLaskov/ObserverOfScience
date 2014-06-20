@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="lbltermsSelector.Text" xml:space="preserve">
+    <value>Terms selector</value>
+  </data>
+	<data name="ControlTitle_settings.Text" xml:space="preserve">
+    <value>Observe of science Settings</value>
+  </data>
+	<data name="ModuleHelp.Text" xml:space="preserve">
+    <value>About observe of science Settings</value>
+  </data>
+</root>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="lbltermsSelector.Text" xml:space="preserve">
+    <value>Выбор отображаемых разработок по группам</value>
+  </data>
+	<data name="ControlTitle_settings.Text" xml:space="preserve">
+    <value>Настройки обозревателя науки</value>
+  </data>
+	<data name="ModuleHelp.Text" xml:space="preserve">
+    <value>О настройках обозревателя науки</value>
+  </data>
+	<data name="lblCountInvention.Text" xml:space="preserve">
+		<value>Количество отображаемых разработок на странице</value>
+	</data>
+	<data name="lblLenghtText.Text" xml:space="preserve">
+		<value>Количество символов краткого описания разработки</value>
+	</data>
+</root>

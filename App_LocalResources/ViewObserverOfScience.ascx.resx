@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="AddContent.Action" xml:space="preserve">
+    <value>Add Content</value>
+  </data>
+	<data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;P&gt;A Adam module&lt;/P&gt;</value>
+  </data>
+	<data name="DefaultContent.Text" xml:space="preserve">
+    <value>Here is some sample content</value>
+  </data>
+   <data name="lblStatus.Format" xml:space="preserve">
+    <value><b>Status invention:</b> <i>{0}</i></value>
+  </data>
+  <data name="lblScientists.Format" xml:space="preserve">
+    <value><b>Developers:</b> <i>{0}</i></value>
+  </data>
+   <data name="lblDetailStatus.Format" xml:space="preserve">
+    <value><b>Status invention:</b> <i>{0}</i></value>
+  </data>
+  <data name="lblDetailScientist.Format" xml:space="preserve">
+    <value><b>Developers:</b> <i>{0}</i></value>
+  </data>
+  <data name="lblTitle.Format" xml:space="preserve">
+    <value><b>Developers:</b> <i>{0}</i></value>
+  </data>
+</root>
