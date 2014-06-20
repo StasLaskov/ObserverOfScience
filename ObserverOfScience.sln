@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverOfScience", "ObserverOfScience.csproj", "{EB46B7D4-05BD-4BEF-BD0A-8468E03D60A6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3E567B16-553C-40B3-80B0-58DF5A97B92D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +18,8 @@ Global
 		{EB46B7D4-05BD-4BEF-BD0A-8468E03D60A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB46B7D4-05BD-4BEF-BD0A-8468E03D60A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB46B7D4-05BD-4BEF-BD0A-8468E03D60A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = ObserverOfScience.csproj
@@ -56,7 +63,6 @@ Global
 		$9.EventRemoveBraceStyle = NextLine
 		$9.StatementBraceStyle = NextLine
 		$9.ElseNewLinePlacement = NewLine
-		$9.ElseIfNewLinePlacement = SameLine
 		$9.CatchNewLinePlacement = NewLine
 		$9.FinallyNewLinePlacement = NewLine
 		$9.WhileNewLinePlacement = NewLine
