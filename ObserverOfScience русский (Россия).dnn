@@ -1,0 +1,36 @@
+﻿<dotnetnuke type="Package" version="5.0">
+  <packages><package name="ObserverOfScience русский (Россия)" type="ExtensionLanguagePack" version="1.0.0">
+  <friendlyName>ObserverOfScience русский (Россия)</friendlyName>
+  <description />
+  <iconFile />
+  <owner>
+    <name />
+    <organization />
+    <url />
+    <email />
+  </owner>
+  <license>The license for this package is not currently included within the installation file, please check with the vendor for full license details.</license>
+  <releaseNotes />
+  <components>
+    <component type="ExtensionLanguage">
+      <languageFiles>
+        <code>ru-RU</code>
+        <package>ObserverOfScience</package>
+        <basePath>DesktopModules\ObserverOfScience</basePath>
+        <languageFile>
+          <path>app_localresources</path>
+          <name>EditObserverOfScience.ascx.ru-RU.resx</name>
+        </languageFile>
+        <languageFile>
+          <path>app_localresources</path>
+          <name>SettingsObserverOfScience.ascx.ru-RU.resx</name>
+        </languageFile>
+        <languageFile>
+          <path>app_localresources</path>
+          <name>ViewObserverOfScience.ascx.ru-RU.resx</name>
+        </languageFile>
+      </languageFiles>
+    </component>
+  </components>
+</package></packages>
+</dotnetnuke>

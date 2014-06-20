@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="lblDetailScientist.Format">
+    <value>&lt;b&gt;Разработчики:&lt;/b&gt;&lt;i&gt;{0}&lt;/i&gt; 
+</value>
+  </data>
+  <data name="lblDetailStatus.Format">
+    <value>&lt;b&gt;Статус разработки:&lt;/b&gt; &lt;i&gt;{0}&lt;/i&gt;
+</value>
+  </data>
+  <data name="lblScientists.Format">
+    <value>&lt;b&gt;Разработчики:&lt;/b&gt;&lt;i&gt;{0}&lt;/i&gt; </value>
+  </data>
+  <data name="lblStatus.Format">
+    <value>&lt;b&gt;Статус разработки:&lt;/b&gt; &lt;i&gt;{0}&lt;/i&gt;</value>
+  </data>
+</root>
