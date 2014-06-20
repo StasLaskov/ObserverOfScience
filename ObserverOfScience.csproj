@@ -73,6 +73,7 @@
     <None Include="App_LocalResources\SettingsObserverOfScience.ascx.ru-RU.resx" />
     <None Include="ObserverOfScience.dnn" />
     <None Include="doc\install.txt" />
+    <None Include="script1.sql" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="lib\ObserverOfScienceSettings.cs" />
