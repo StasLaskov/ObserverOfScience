@@ -113,7 +113,7 @@ namespace ObserverOfScience
 					inv.InventionEssence = txtInventionEssence.Text;
 
 					inv.Name = txtTitle.Text;
-					ctrl.Add<ObserverOfScienceInfo>(inv);
+					ctrl.Add<InventionInfo>(inv);
 
 
 					item = new ObserverOfScienceInfo ();
